@@ -1,0 +1,98 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100vh;
+}
+
+form{
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 60%;
+    padding: 2vw 4vw;
+}
+
+form h1{
+    text-align: center;
+    color: red;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+form input{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    background-color: gainsboro;
+    resize: none;
+    font-weight: lighter;
+}
+
+#lucky{
+    display: none;
+    align-self: center;
+    animation-name: changecolor;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    
+}
+
+#send{
+    background-color: transparent;
+    border: 1px solid red;
+    color: red;
+    border-radius: 101px;
+    padding: 15px;
+    font-size: large;
+}
+
+#send:hover{
+    background-color: orangered;
+    color: white;
+    transition: all 1s;
+}
+
+#name:focus{
+    background-color: transparent;
+    transition: all 1s;
+}
+
+@keyframes changecolor {
+    0%{
+        color: green;
+    }
+    10%{
+        color: yellow;
+    }20%{
+        color: hotpink;
+    }30%{
+        color: red;
+    }40%{
+        color: purple;
+    }50%{
+        color: yellow;
+    }60%{
+        color: cyan;
+    }70%{
+        color: skyblue;
+    }80%{
+        color: pink;
+    }90%{
+        color: red;
+    }100%{
+        color: green;
+    }
+}
